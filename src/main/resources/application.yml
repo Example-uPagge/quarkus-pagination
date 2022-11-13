@@ -1,0 +1,13 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    reactive:
+      url: postgresql://localhost:5432/test
+      max-size: 20
+  hibernate-orm:
+    database:
+      generation: update
+    log:
+      sql: true
